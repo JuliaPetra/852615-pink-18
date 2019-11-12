@@ -10,13 +10,13 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="24" alt="Логотип «Пинк»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать/скрыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="main-nav__list__item--active"><a>Главная</a></li>
-            <li class="main-nav__list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__list__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__list__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="blank">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -24,18 +24,17 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "Пинк" - взгляните на жизнь иначе!</h1>
       <section class="download-app">
-        <h3 class="download-app__heading heading">Взгляните на жизнь иначе!</h3>
+        <h2 class="download-app__heading heading">Взгляните на жизнь иначе!</h2>
         <ul class="download-app__list site-list">
-          <li class="download-app__item download-app__item--apple">Apple</li>
-          <li class="download-app__item download-app__item--android">Android</li>
-          <li class="download-app__item download-app__item--win">Win</li>
+          <li><a class="download-app__item download-app__item--apple">Apple</a></li>
+          <li><a class="download-app__item download-app__item--android">Android<a></li>
+          <li><a class="download-app__item download-app__item--win">Win</a></li>
         </ul>
         <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества приложения</h2>
-        <h3 class="advantages_heading heading">Устали от серости мегполиса?</h3>
-        <h3 class="advantages_heading heading">Нам есть, что вам предложить</h3>
+        <h2 class="advantages__heading heading">Устали от серости мегполиса?</h2>
+        <h2 class="advantages__heading heading">Нам есть, что вам предложить</h2>
         <ul class="advantages__list site-list">
           <li class="advantages__item">
             <b>Поднимает настроение></b>
@@ -50,80 +49,83 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
           </li>
         </ul>
-      <section class="reveiws">
+        <img class="adventages__image" src="img/pink-on-phone.jpg" width="70" height="120" alt="Фото приложения «Пинк»">
+      </section>
+      <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reveiws__list slider__list">
-            <li class="reveiws__item slider__item">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
               <p class="reviews__author-name">Николай Петров</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-повому взглянуть на привычные серые вещи! А еще я познакомися
               со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reveiws__item slider__item">
+            <li class="reviews__item slider__item">
               <p class="reviews__author-name">Николай Петров</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-повому взглянуть на привычные серые вещи! А еще я познакомися
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reveiws__item slider__item">
+            <li class="reviews__item slider__item">
               <p class="reviews__author-name">Николай Петров</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-повому взглянуть на привычные серые вещи! А еще я познакомися
               со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <ul class="reviews__toggles slider__toggles">
+            <li><button class="slider__toggle--active" type="button">1</button></li>
+            <li><button class="slider__toggle" type="button">2</button></li>
+            <li><button class="slider__toggle" type="button">3</button></li>
+          </ul>
         </div>
       </section>
       <section class="rates">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="rates__wrapper slider">
-          <ul class="rates__list slider-list">
-            <li class="rates__item slider-item">
-              <h3 class="rates__title">Стандарт</h3>
-              <p class="rates__price">3,99 USD</p>
-              <table class="rates__options">
-                <tr>
-                  <td class="rates__option">Розовый фильтр</td>
-                  <td class="rates__option--included"></td>
-                </tr>
-                <tr>
-                  <td class="rates__option">Смайлики</td>
-                  <td class="rates__option--included"></td>
-                </tr>
-                <tr>
-                  <td class="rates__option">Комментарии</td>
-                  <td class="rates__option--not-included"></td>
-                </tr>
-              </table>
-            </li>
-          </ul>
-          <p class="rate__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle--active" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+        <div class="rates__table-wrapper">
+          <table class="rates__table">
+            <tr>
+              <th class="rates-table__title">База<br>
+                <span>1,99 USD</span>
+              </th>
+              <th class="rates-table__title rates-table__title--hit">Стандарт<br>
+                <span>3,99 USD</span>
+              </th>
+              <th class="rates-table__title">Анлим<br>
+                <span>9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="rates-table__option">Розовый фильтр<span class="rates-table__check-yes visually-hidden">да</span></td>
+              <td class="rates-table__option">Розовый фильтр<span class="rates-table__check-yes visually-hidden">да</span></td>
+              <td class="rates-table__option">Розовый фильтр<span class="rates-table__check-yes visually-hidden">да</span></td>
+            </tr>
+            <tr>
+              <td class="rates-table__option">Смайлики<span class="rates-table__check-no visually-hidden">нет</span></td>
+              <td class="rates-table__option">Смайлики<span class="rates-table__check-yes visually-hidden">да</span></td>
+              <td class="rates-table__option">Смайлики<span class="rates-table__check-yes visually-hidden">да</span></td>
+            </tr>
+            <tr>
+              <td class="rates-table__option">Комментарии<span class="rates-table__check-no visually-hidden">нет</span></td>
+              <td class="rates-table__option">Комментарии<span class="rates-table__check-no visually-hidden">нет</span></td>
+              <td class="rates-table__option">Комментарии<span class="rates-table__check-yes visually-hidden">да</span></td>
+            </tr>
+          </table>
         </div>
       </section>
     </main>
     <section class="feedback">
-      <h2 class="visually-hidden">Контакты для обратной связи</h2>
-      <h3 class="feedback__heading heading">Остались вопросы? Свяжитесь с нами!</h3>
+      <h2 class="feedback__heading heading">Остались вопросы? Свяжитесь с нами!</h2>
       <div class="feedback__contacts contacts">
         <p class="contacts__title">Звоните!</p>
         <a class="contacts__phone" href="tel:+78125556666">
           <span class="contacts__phone"></span> +7 (812) 555-66-66
         </a>
         <p class="contacts__title">Пишите:</p>
-        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
-          <span class="contacts__mail">mail@htmlacademy.ru<span>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
         </a>
         <p class="contacts__title">Приезжайте в гости:</p>
         <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
       </div>
-      <img class="feedbach__map" src="img/map.jpg" width="1200" height="430" alt="Адрес офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <img class="feedback__map" src="img/map.jpg" width="1200" height="430" alt="Адрес офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </section>
   </body>
 </html>
