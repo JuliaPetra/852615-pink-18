@@ -10,13 +10,15 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="24" alt="Логотип «Пинк»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать/скрыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Показать/скрыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="blank">HTML Academy</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -26,9 +28,9 @@
       <section class="download-app">
         <h2 class="download-app__heading heading">Взгляните на жизнь иначе!</h2>
         <ul class="download-app__list site-list">
-          <li><a class="download-app__item download-app__item--apple">Apple</a></li>
-          <li><a class="download-app__item download-app__item--android">Android<a></li>
-          <li><a class="download-app__item download-app__item--win">Win</a></li>
+          <li><a class="download-app__item download-app__item--apple" href="#">Apple</a></li>
+          <li><a class="download-app__item download-app__item--android" href="#">Android<a></li>
+          <li><a class="download-app__item download-app__item--win" href="#">Win</a></li>
         </ul>
         <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -49,7 +51,7 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="adventages__image" src="img/pink-on-phone.jpg" width="70" height="120" alt="Фото приложения «Пинк»">
+        <img class="advantages__image" src="img/pink-on-phone.jpg" width="70" height="120" alt="Фото приложения «Пинк»">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -84,29 +86,29 @@
           <table class="rates__table">
             <tr>
               <th class="rates-table__title">База<br>
-                <span>1,99 USD</span>
+                <span class="rates-table__price">1,99 USD</span>
               </th>
               <th class="rates-table__title rates-table__title--hit">Стандарт<br>
-                <span>3,99 USD</span>
+                <span class="rates-table__price">3,99 USD</span>
               </th>
               <th class="rates-table__title">Анлим<br>
-                <span>9,99 USD</span>
+                <span class="rates-table__price">9,99 USD</span>
               </th>
             </tr>
             <tr>
-              <td class="rates-table__option">Розовый фильтр<span class="rates-table__check-yes visually-hidden">да</span></td>
-              <td class="rates-table__option">Розовый фильтр<span class="rates-table__check-yes visually-hidden">да</span></td>
-              <td class="rates-table__option">Розовый фильтр<span class="rates-table__check-yes visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Розовый фильтр<span class="visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Розовый фильтр<span class="visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Розовый фильтр<span class="visually-hidden">да</span></td>
             </tr>
             <tr>
-              <td class="rates-table__option">Смайлики<span class="rates-table__check-no visually-hidden">нет</span></td>
-              <td class="rates-table__option">Смайлики<span class="rates-table__check-yes visually-hidden">да</span></td>
-              <td class="rates-table__option">Смайлики<span class="rates-table__check-yes visually-hidden">да</span></td>
+              <td class="rates-table__option">Смайлики<span class="visually-hidden">нет</span></td>
+              <td class="rates-table__option rates-table__option--yes">Смайлики<span class="visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Смайлики<span class="visually-hidden">да</span></td>
             </tr>
             <tr>
-              <td class="rates-table__option">Комментарии<span class="rates-table__check-no visually-hidden">нет</span></td>
-              <td class="rates-table__option">Комментарии<span class="rates-table__check-no visually-hidden">нет</span></td>
-              <td class="rates-table__option">Комментарии<span class="rates-table__check-yes visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--no">Комментарии<span class="visually-hidden">нет</span></td>
+              <td class="rates-table__option rates-table__option--no">Комментарии<span class="visually-hidden">нет</span></td>
+              <td class="rates-table__option rates-table__option--yes">Комментарии<span class="visually-hidden">да</span></td>
             </tr>
           </table>
         </div>
@@ -116,12 +118,9 @@
       <h2 class="feedback__heading heading">Остались вопросы? Свяжитесь с нами!</h2>
       <div class="feedback__contacts contacts">
         <p class="contacts__title">Звоните!</p>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone"></span> +7 (812) 555-66-66
-        </a>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
         <p class="contacts__title">Пишите:</p>
-        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
-        </a>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         <p class="contacts__title">Приезжайте в гости:</p>
         <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
       </div>

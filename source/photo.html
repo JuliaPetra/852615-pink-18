@@ -10,13 +10,15 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="24" alt="Логотип «Пинк»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать/скрыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Показать/скрыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item--active"><a>Фотографии</a></li>
             <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/" target="blank">HTML Academy</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -24,10 +26,10 @@
     <main class="page-main">
       <h1 class="page-main__heading heading">Фотографии пользователей</h1>
       <p class="page-main__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <ul class="gallery__list">
+      <ul class=" gallery gallery__list">
         <li class="gallery__post">
           <a href="#">
-            <img class="gallery__image--panorama" src="https://via.placeholder.com/150x150">
+            <img class="gallery__image gallery__image--panorama" src="https://via.placeholder.com/150x150">
           </a>
           <p class="gallery__post-time"><b class="gallery__author-image">Анна</b>(5 минут назад)</p>
           <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой ответ и смотрите прямую трансляцию в перископе. Задавайте свои вопросы!</p>
@@ -45,7 +47,7 @@
           <a href="#">
             <img class="gallery__image" src="https://via.placeholder.com/150x150">
           </a>
-          <p class=gallery__post-time><b class="gallery__author-image">Антон</b>(12 часов назад)</p>
+          <p class="gallery__post-time"><b class="gallery__author-image">Антон</b>(12 часов назад)</p>
           <p class="gallery__text">Соседи будут рады!</p>
           <p class="gallery__likes">нравится: 666</p>
         </li>
@@ -53,7 +55,7 @@
           <a href="#">
             <img class="gallery__image" src="https://via.placeholder.com/150x150">
           </a>
-          <p class=gallery__post-time><b class="gallery__author-image">Борис</b>(20 часов назад)</p>
+          <p class="gallery__post-time"><b class="gallery__author-image">Борис</b>(20 часов назад)</p>
           <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="gallery__likes">нравится: 215</p>
         </li>
@@ -61,15 +63,15 @@
           <a href="#">
             <img class="gallery__image" src="https://via.placeholder.com/150x150">
           </a>
-          <p class=gallery__post-time><b class="gallery__author-image">Сергей</b>(25 часов назад)</p>
+          <p class="gallery__post-time"><b class="gallery__author-image">Сергей</b>(25 часов назад)</p>
           <p class="gallery__text">Самая кубанская в мире!</p>
           <p class="gallery__likes">нравится: 4</p>
         </li>
         <li class="gallery__post">
           <a href="#">
-            <img class="gallery__imagea" src="https://via.placeholder.com/150x150">
+            <img class="gallery__image" src="https://via.placeholder.com/150x150">
           </a>
-          <p class=gallery__post-time><b class="gallery__author-image">Максим</b>(40 часов назад)</p>
+          <p class="gallery__post-time"><b class="gallery__author-image">Максим</b>(40 часов назад)</p>
           <p class="gallery__text">Где снег-то?</p>
           <p class="gallery__likes">нравится: 150</p>
         </li>
@@ -77,28 +79,28 @@
           <a href="#">
             <img class="gallery__image" src="https://via.placeholder.com/150x150">
           </a>
-          <p class=gallery__post-time><b class="gallery__author-image">Надежда</b>(45 часов назад)</p>
+          <p class="gallery__post-time"><b class="gallery__author-image">Надежда</b>(45 часов назад)</p>
           <p class="gallery__text">Всем GM и взаимные лайки!</p>
           <p class="gallery__likes">нравится: 2560</p>
         </li>
       </ul>
-      <div class="page-main__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
+      <p class="page-main__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <form class="upload-form" action="https://echo.htmlacademy.ru" method="post">
         <img class="upload-form__post-image" src="https://via.placeholder.com/150x150">
         <div class="upload-form__filter-controls">
-          <input type="radio" id="upload-filter-1" name="upload-filter" checked>
-          <label class="upload-form__filter-toggle" for="upload-filter-1"></label>
-          <input type="radio" id="upload-filter-2" name="upload-filter">
-          <label class="upload-form__filter-toggle" for="upload-filter-2"></label>
-          <input type="radio" id="upload-filter-3" name="upload-filter">
-          <label class="upload-form__filter-toggle" for="upload-filter-3"></label>
+          <input class="upload-form__filter" type="radio" id="upload-filter-1" name="upload-filter" checked>
+          <label class="upload-form__filter-toggle upload-form__filter-toggle--crop" for="upload-filter-1"><span class="visually-hidden">Обрезка</span></label>
+          <input class="upload-form__filter" type="radio" id="upload-filter-2" name="upload-filter">
+          <label class="upload-form__filter-toggle upload-form__filter-toggle--fill" for="upload-filter-2"><span class="visually-hidden">Заливка</span></label>
+          <input class="upload-form__filter" type="radio" id="upload-filter-3" name="upload-filter">
+          <label class="upload-form__filter-toggle upload-form__filter-toggle--contrast" for="upload-filter-3"><span class="visually-hidden">Контраст</span></label>
         </div>
         <div class="upload-form__range-controls">
           <input class="range-filter" type="range" id="range-filter" name="range-filter">
         </div>
         <div class="upload-form__buttons">
-          <input class="upload-form__button upload-form__button--active" id="submit" type="submit" value="Запостить">
-          <input class="upload-form__button upload-form__button--disabled" id="reset" type="reset" value="Отмена">
+          <button class="upload-form__button upload-form__button--primary" type="submit">Запостить</button>
+          <button class="upload-form__button" type="reset">Отмена</button>
         </div>
       </form>
     </main>
