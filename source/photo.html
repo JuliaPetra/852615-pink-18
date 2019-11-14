@@ -15,10 +15,10 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item--active"><a>Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item--active"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -26,7 +26,7 @@
     <main class="page-main">
       <h1 class="page-main__heading heading">Фотографии пользователей</h1>
       <p class="page-main__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <ul class=" gallery gallery__list">
+      <ul class="gallery">
         <li class="gallery__post">
           <a href="#">
             <img class="gallery__image gallery__image--panorama" src="https://via.placeholder.com/150x150">
@@ -89,14 +89,20 @@
         <img class="upload-form__post-image" src="https://via.placeholder.com/150x150">
         <div class="upload-form__filter-controls">
           <input class="upload-form__filter" type="radio" id="upload-filter-1" name="upload-filter" checked>
-          <label class="upload-form__filter-toggle upload-form__filter-toggle--crop" for="upload-filter-1"><span class="visually-hidden">Обрезка</span></label>
+          <label class="upload-form__filter-toggle upload-form__filter-toggle--crop" for="upload-filter-1">
+            <span class="visually-hidden">Обрезка</span>
+          </label>
           <input class="upload-form__filter" type="radio" id="upload-filter-2" name="upload-filter">
-          <label class="upload-form__filter-toggle upload-form__filter-toggle--fill" for="upload-filter-2"><span class="visually-hidden">Заливка</span></label>
+          <label class="upload-form__filter-toggle upload-form__filter-toggle--fill" for="upload-filter-2">
+            <span class="visually-hidden">Заливка</span>
+          </label>
           <input class="upload-form__filter" type="radio" id="upload-filter-3" name="upload-filter">
-          <label class="upload-form__filter-toggle upload-form__filter-toggle--contrast" for="upload-filter-3"><span class="visually-hidden">Контраст</span></label>
+          <label class="upload-form__filter-toggle upload-form__filter-toggle--contrast" for="upload-filter-3">
+            <span class="visually-hidden">Контраст</span>
+          </label>
         </div>
         <div class="upload-form__range-controls">
-          <input class="range-filter" type="range" id="range-filter" name="range-filter">
+          <input class="upload-form__range-filter" type="range" id="range-filter" name="range-filter">
         </div>
         <div class="upload-form__buttons">
           <button class="upload-form__button upload-form__button--primary" type="submit">Запостить</button>
